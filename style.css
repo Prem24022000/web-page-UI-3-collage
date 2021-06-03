@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    line-height: 1.8;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+
+/* header */
+.header{
+    background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)) , url(eduford_img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav i{
+    color: white;
+    visibility: hidden;
+}
+
+.container nav ul{
+    display: flex;
+}
+
+.container nav ul li{
+    padding: 10px;
+    margin: 0 8px;
+}
+
+
+.container nav ul li::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    margin: auto;
+    background-color: green;
+    transition: all 0.8s;
+}
+
+
+.container nav ul li:hover::after{
+    width: 100%;
+}
+
+.header-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.header-main .header-content{
+    text-align: center;
+}
+
+.header-main .header-content h1{
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+
+
+.header-main .header-content p{
+    max-width: 600px;
+    font-size: 0.8rem;
+    margin: auto;
+    color: white;
+}
+
+/* courses-section */
+
+.courses-section .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.courses-section .container .grid .card{
+    background-color: rgb(253, 241, 241);
+    padding: 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.courses-section .container .grid .card:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* campus-section */
+
+.campus .container .img-card .card-content{
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform: translateY(100%);
+    transition: all .6s;
+}
+
+
+.campus .container .grid .img-card{
+    height: 550px;
+    border-radius: 6px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.campus .container .grid .img-card:hover > .card-content{
+    transform: translateY(0%);
+    background: rgba(255, 0, 0, 0.6);
+}
+
+
+.img-1{
+    background-image: url(eduford_img/london.png);
+}
+
+.img-2{
+    background-image: url(eduford_img/newyork.png);
+}
+
+.img-3{
+    background-image: url(eduford_img/washington.png);
+}
+
+.campus {
+    overflow: hidden;
+}
+
+/* facilities */
+
+.facilities .container .grid .card-content{
+    height: 400px;
+}
+
+.facilities .container .grid .card-content p{
+    margin: 0%;
+    margin-top: 20px;
+}
+
+/* review */
+
+.review img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+.review .grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.review .container .grid .card{
+    display: flex;
+}
+
+.review-content p,h3,ul{
+    margin-left: 20px;
+}
+
+/* enroll */
+
+.enroll{
+    height: 400px;
+}
+
+.enroll .container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(eduford_img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* about */
+
+.about{
+    margin: 40px 0;
+}
+
+.about .container p{
+    max-width: 800px;
+    margin: auto;
+}
+
+/* footer */
+.footer ul li{
+    padding: 0 20px;
+}
+
+/* utility */
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+p{
+    color: rgb(206, 136, 147);
+    font-size: 0.9rem;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+i{
+    color: green;
+}
+
+.btn{
+    padding: 6px 18px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(248, 245, 245);
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    transition: all 1s;
+}
+
+.btn:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+}
+
+ul li{
+    display: inline;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-black{
+    color: black;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.card{
+    background-color: rgb(253, 241, 241);
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.p-100{
+    padding: 100px;
+    padding-bottom: 0;
+}
+
+.mt{
+    margin-top: 200px;
+}
+
+.mb{
+    margin-bottom: 50px;
+}
+
+
+
+/* media query 768px */
+
+@media(max-width: 770px){
+
+    /* header and nav */
+    nav{
+        align-items: flex-start;
+    }
+
+    nav i{
+        color: white;
+        visibility: visible;
+    }
+
+    nav img{
+        width: 200px;
+    }
+
+    .header{
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    nav ul{
+        padding-top: 40px;
+        flex-direction: column;
+        height: 100vh;
+        width: 40vw;
+        background-color: green;
+        padding-left: 30px;
+        transform: translateX(100%);
+        transition: all 0.6s;
+        z-index: 100;
+    }
+
+    nav.active > ul{
+        transform: translate(0);
+    }
+
+    nav .burger-menu i{
+        position: absolute;
+        right: 60px;
+        top: 20px;
+    }
+
+    /* courses-section */
+
+    .courses-section .grid,
+    .campus .grid,
+    .facilities .grid,
+    .review .grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* campus */
+    .campus .container .img-card .card-content{
+        border-radius: 6px;
+        height: 100%;
+        transform: translateY(0%);
+        transition: all .6s;
+    }
+    
+    /* facilities */
+    .facilities .card-content{
+        margin: 60px 0;
+    }
+
+    .facilities .card-content h3{
+        margin: 0;
+    }
+
+    .header-content{
+        margin-bottom: 400px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+}
