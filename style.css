@@ -334,6 +334,8 @@ ul li{
     }
 
     nav ul{
+        position: fixed;
+        right: 0;
         padding-top: 40px;
         flex-direction: column;
         height: 100vh;
@@ -386,6 +388,11 @@ ul li{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+    }
+}
 
+@media(max-width: 376px){
+    .review .container .grid .card{
+        flex-direction: column;
     }
 }
